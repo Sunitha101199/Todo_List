@@ -1,9 +1,9 @@
 import django_on_heroku
-from decouple import config
+from decouple import Todo_List
 
 from .settings import *
 
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = Todo_List('SECRET_KEY')
 
 DEBUG = False
 

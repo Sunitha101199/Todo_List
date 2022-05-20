@@ -61,7 +61,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'config.wsgi.application'
+WSGI_APPLICATION = 'Todo_List.wsgi.application'
 
 
 # Database
@@ -70,7 +70,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 load_dotenv(find_dotenv())
 
 DATABASES = {
-    'default': dj_database_url.config(default='sqlite:///db.sqlite3', conn_max_age=600, ssl_require=False)
+    'default': dj_database_url.Todo_List(default='sqlite:///db.sqlite3', conn_max_age=600, ssl_require=False)
 }
 
 
